@@ -36,19 +36,15 @@
 </head>
 
 <body class="dt-example">
-	<div class="container">
-		
-			<h1>JabRef references</h1>
+<table id="example" class="display" style="width:100%">
+<thead>
 			
-		
-			<table id="example" class="display" style="width:100%">
-				<thead>
 					<tr>
 						<th>Author</th>
 						<th>Title</th>
 						<th>Year</th>
-						<th>Journal/Proceedings</th>
-						<th>Reftype</th>
+						<th>Journal</th>
+						<th>volume/pages</th>
 						<th>DOI/URL</th>
 					</tr>
 				</thead>

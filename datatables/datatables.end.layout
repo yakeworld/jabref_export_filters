@@ -3,8 +3,8 @@
 						<th>Author</th>
 						<th>Title</th>
 						<th>Year</th>
-						<th>Journal/Proceedings</th>
-						<th>Reftype</th>
+						<th>Journal</th>
+						<th>volume/pages</th>
 						<th>DOI/URL</th>
 					</tr>
 				</tfoot>
