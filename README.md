@@ -1,10 +1,9 @@
 # jabref_export_filters
 cumtom jabref export filters with datatables
-
 DataTables is a table enhancing plug-in for the jQuery Javascript library, adding sorting, paging and filtering abilities to plain HTML tables with minimal effort. 
-
 It is better than QuickSearch script for JabRef HTML export.
-
+the code is very simple,just as below:
+[a live demo online](https://yakeworld.github.io/jabref_export_filters/datatables/datatables.html)
 ```html
 <head>
 <meta charset="utf-8" />
