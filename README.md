@@ -5,7 +5,7 @@ DataTables is a table enhancing plug-in for the jQuery Javascript library, addin
 
 It is better than QuickSearch script for JabRef HTML export.
 
-
+```html
 <head>
 <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
@@ -40,3 +40,4 @@ It is better than QuickSearch script for JabRef HTML export.
 
     </script>
 </head>
+```
