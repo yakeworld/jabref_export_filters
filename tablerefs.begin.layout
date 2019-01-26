@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <style type="text/css" class="init">
+    </style>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" class="init">
+   $(document).ready(function() {
+    $('#example').DataTable(  );
+} );
+
+    </script>
+</head>
+
+<body class="dt-example">
+	<div class="container">
+		
+			<h1>JabRef references</h1>
+			
+		
+			<table id="example" class="display" style="width:100%">
+				<thead>
+					<tr>
+						<th>Department</th>
+						<th>Author</th>
+						<th>Title</th>
+						<th>Year</th>
+						<th>Journal/Proceedings</th>
+						<th>Reftype</th>
+						<th>DOI/URL</th>
+					</tr>
+				</thead>
+				<tbody>
