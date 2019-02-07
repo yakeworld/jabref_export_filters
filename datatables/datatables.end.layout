@@ -6,6 +6,7 @@
 						<th>Journal</th>
 						<th>volume/pages</th>
 						<th>DOI/URL</th>
+						<th>Abstract</th>
 					</tr>
 				</tfoot>
 			</table>

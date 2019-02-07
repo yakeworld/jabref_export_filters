@@ -3,6 +3,7 @@
 	<td>\format[HTMLChars]{\title}</td>
 	<td>\year</td>
 	<td>\format[HTMLChars]{\journal}</td>    
-	<td>\begin{volume}\volume\end{volume} \begin{issue}(\format[FormatPagesForHTML]{\issue})\end{issue}\begin{number}(\format[FormatPagesForHTML]{\issue})\end{number}\format[HTMLChars]{\booktitle}\begin{pages}: \format[FormatPagesForHTML]{\pages}\end{pages}</td>
+	<td>\begin{volume}\volume\end{volume} \begin{issue}(\format[FormatPagesForHTML]{\issue})\end{issue}\begin{number}(\format[FormatPagesForHTML]{\number})\end{number}\format[HTMLChars]{\booktitle}\begin{pages}: \format[FormatPagesForHTML]{\pages}\end{pages}</td>
 	<td>\begin{doi}<a href="\format[DOICheck]{\doi}" target='_blank'>DOI</a> \end{doi}\begin{url}<a href="\format{\url}">URL</a>\end{url}&nbsp;\begin{doi}<a href="http://sci-hub.tw/\format[DOICheck]{\doi}" target='_blank'>SCI-HUB</a> \end{doi}</td>
+	<td>\format[HTMLChars]{\abstract}</td>
 </tr>

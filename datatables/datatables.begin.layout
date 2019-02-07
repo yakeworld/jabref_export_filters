@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
     <style type="text/css" class="init">
     </style>
@@ -9,6 +9,19 @@
     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" class="init">
    $(document).ready(function() {
+    	$('#example').DataTable( {
+        "columnDefs": [
+            {
+                "targets": [ 6 ],
+                "visible": false
+                           },
+           
+        ]
+    } );
+	
+
+   
+   
     // Setup - add a text input to each footer cell
     $('#example tfoot th').each( function () {
         var title = $(this).text();
@@ -17,6 +30,18 @@
  
     // DataTable
     var table = $('#example').DataTable();
+	
+	$('a.toggle-vis').on( 'click', function (e) {
+        e.preventDefault();
+ 
+        // Get the column API object
+        var column = table.column( $(this).attr('data-column') );
+ 
+        // Toggle the visibility
+        column.visible( ! column.visible() );
+	});
+	
+
  
     // Apply the search
     table.columns().every( function () {
@@ -36,6 +61,22 @@
 </head>
 
 <body class="dt-example">
+
+
+<div>
+&#36873;&#25321;&#26174;&#31034;&#21015;&#65306; 
+<a class="toggle-vis" data-column="0">Author</a> -
+<a class="toggle-vis" data-column="1">Title</a> -
+<a class="toggle-vis" data-column="2">Year</a> -
+<a class="toggle-vis" data-column="3">Journal</a> -
+<a class="toggle-vis" data-column="4">volume/pages</a> -
+<a class="toggle-vis" data-column="5">DOI/URL</a> -
+<a class="toggle-vis" data-column="6">Abstract</a>
+</div>
+
+
+
+
 <table id="example" class="display" style="width:100%">
 <thead>
 			
@@ -46,6 +87,7 @@
 						<th>Journal</th>
 						<th>volume/pages</th>
 						<th>DOI/URL</th>
+						<th>Abstract</th>
 					</tr>
 				</thead>
 				<tbody>
